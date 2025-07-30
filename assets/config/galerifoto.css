@@ -1,0 +1,103 @@
+/* === GALERI FOTO === */
+section {
+  padding: 60px 0;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #222;
+}
+
+.galeri-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.galeri-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+  background-color: white;
+}
+
+.galeri-item:hover {
+  transform: scale(1.03);
+}
+
+.galeri-item img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  display: block;
+  border-radius: 15px 15px 0 0;
+}
+
+.galeri-caption {
+  padding: 10px 15px;
+  text-align: center;
+  font-weight: 500;
+  color: #444;
+  font-size: 1rem;
+}
+
+/* Responsive padding untuk kontainer */
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (max-width: 576px) {
+  .galeri-item img {
+    height: 200px;
+  }
+}
+
+/* Style untuk header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff; /* warna putih */
+  padding: 20px 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* bayangan agar ada kesan mengambang */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Judul/logo */
+header h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #d200d2; /* pink ungu */
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Menu navbar */
+nav {
+  display: flex;
+  gap: 30px;
+}
+
+/* Link navbar */
+nav a {
+  text-decoration: none;
+  color: #3a003a;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.3s ease;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+/* Efek hover */
+nav a:hover,
+nav a.active {
+  background-color: #ff66ff;
+  color: white;
+}

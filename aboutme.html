@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anggi Rehan - Medan Project</title>
+  <link rel="stylesheet" href="assets/config/style.css" />
+  <link rel="stylesheet" href="assets/config/about.css" />
+  <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      rel="stylesheet"
+    />
+</head>
+<body class="with-bg">
+
+<header role="banner" class="header">  
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Pulau Medan</a>
+      <span class="navbar-toggler-icon"></span>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="profile.html">Profile</a></li>
+          <li class="nav-item"><a class="nav-link" href="berita.html">News</a></li>
+          <li class="nav-item"><a class="nav-link" href="video.html">Video</a></li>
+          <li class="nav-item"><a class="nav-link" href="galerifoto.html">Galeri</a></li>
+          <li class="nav-item"><a class="nav-link" href="aboutme.html">aboutme</a></li>
+          <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+    <main class="container">
+      <div class="content">
+        <h1 class="title">Deskripsi Diri</h1>
+
+        <div class="center">
+  <img src="img/rehan.jpg" alt="Foto Profil" class="profile-pic" />
+  
+  <!-- Tambahan tombol anggota di dekat foto -->
+  <div class="anggota-buttons" style="margin-top: 20px;">
+    <a href="herlina.html" class="btn-primary" style="text-decoration: none;">herlina</a>
+    <a href="meylinah.html" class="btn-primary" style="text-decoration: none;">Meylinah</a>
+  </div>
+</div>
+
+
+        <div class="info">
+          <p><strong>Nama:</strong> Anggi Rehan Pangestu</p>
+          <p><strong>Tanggal Lahir:</strong> 11 Mei 2007</p>
+          <p>
+            <strong>Alamat:</strong> Jl. Sindang Agung, Kec. Tanjung Raja,
+            Lampung Utara
+          </p>
+          <p><strong>No. HP:</strong> 0895-3231-59683</p>
+        </div>
+
+        <section class="section">
+          <h3 class="section-title">Tentang Saya</h3>
+          <p class="justify">
+            Saya adalah mahasiswa Universitas Muhammadiyah Kotabumi yang
+            memiliki minat dalam bidang teknologi informasi dan desain web.
+            Lulusan dari SMA 01 Tanjung Raja. Saat ini tinggal di kost di
+            Kotabumi karena kuliah. Hobi saya adalah bermain game dan memasak.
+          </p>
+        </section>
+
+        <section class="section">
+          <h3 class="section-title">Tentang Keluarga Saya</h3>
+          <p class="justify">
+            Saya berasal dari keluarga sederhana. Ayah saya, Suwiyanto, bekerja
+            sebagai petani, dan ibu saya, Sukinah, menjaga toko sembako di
+            rumah. Saya juga memiliki adik perempuan bernama Sazia Lufianti yang
+            akan masuk jenjang SMP.
+          </p>
+        </section>
+
+        <section class="section">
+          <h3 class="section-title">Tentang Teman-Teman Saya</h3>
+          <p class="justify">
+            Sejak kecil saya memiliki banyak teman, namun setelah lulus SMP kami
+            memilih jalan masing-masing. Ada yang masuk SMK, ada yang mondok,
+            dan saya sendiri masuk SMA. Kini kami jarang berkomunikasi dan hanya
+            bertemu saat lebaran atau hari besar lainnya.
+          </p>
+        </section>
+
+        <section class="center social">
+          <h3 class="section-title">Media Sosial</h3>
+          <a
+            href="https://www.instagram.com/anggi_rehanpangestu?igsh=MnZzOHhwYjFtdmF4"
+            target="_blank"
+            class="btn-primary"
+            style="text-decoration: none"
+          >
+            Instagram
+          </a>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-content">
+        <p>&copy; 2025 anggi rehan pangestu.</p>
+      </div>
+    </footer>
+    <script>
+      // Efek transisi halaman
+      const links = document.querySelectorAll("a[href]");
+      links.forEach((link) => {
+        link.addEventListener("click", function (e) {
+          const url = this.href;
+          if (!url.includes("#") && !this.target) {
+            e.preventDefault();
+            document.body.classList.add("fade-out");
+            setTimeout(() => {
+              window.location.href = url;
+            }, 400);
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

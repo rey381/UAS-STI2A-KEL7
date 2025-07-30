@@ -1,0 +1,295 @@
+/* Global Reset & Base */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #ffe6f0; /* Pink muda */
+  color: #333; /* Default teks */
+  transition: all 0.3s ease-in-out;
+}
+
+/* Header */
+.header {
+  background-color: #ff99cc;
+  padding: 1rem 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: white;
+  text-decoration: none;
+}
+
+/* Navigasi */
+.nav {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease-in-out;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #800040;
+}
+
+/* Konten Utama */
+main {
+  padding: 3rem 1rem;
+}
+
+main h1,
+main h2,
+main h3,
+main h4,
+main h5,
+main h6,
+main p,
+main a,
+main li,
+main span {
+  color: #d6006b;
+}
+
+main a:hover {
+  color: #b40056;
+}
+
+/* Kontainer Contact */
+.contact-container {
+  padding: 4rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+}
+
+.members {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.profile {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-align: center;
+  max-width: 300px;
+}
+
+.profile img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 3px solid #ff99cc;
+}
+
+.profile h3 {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+  color: #d6006b;
+}
+
+.profile p {
+  color: #555;
+}
+
+.profile p a {
+  text-decoration: none;
+  color: #d6006b;
+}
+
+.profile p a:hover {
+  text-decoration: underline;
+}
+
+/* Section Style */
+section {
+  background-color: #fff0f6;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+/* Footer */
+.footer {
+  background-color: #ff99cc;
+  padding: 1rem 0;
+  text-align: center;
+  color: white;
+  font-weight: 300;
+  margin-top: 3rem;
+}
+
+/* Transisi Halaman */
+body.fade-out {
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+ main {
+      padding: 6rem 1rem 3rem;
+      background-color: #fff0f6;
+      min-height: 100vh;
+    }
+    h2.section-title {
+      text-align: center;
+      color: #d6006b;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      font-weight: bold;
+    }
+    .members {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+    .profile {
+      background: white;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 280px;
+      transition: transform 0.3s ease;
+    }
+    .profile:hover {
+      transform: translateY(-8px);
+    }
+    .profile img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+      border: 3px solid #ff99cc;
+    }
+    .profile h3 {
+      color: #d6006b;
+      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
+    }
+    .profile p, .profile a {
+      color: #555;
+      font-size: 0.95rem;
+      margin: 0.2rem 0;
+      text-decoration: none;
+    }
+    .profile a:hover {
+      color: #d6006b;
+    }
+    footer {
+      background-color: #d6006b;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+
+/* Style untuk header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff; /* warna putih */
+  padding: 20px 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* bayangan agar ada kesan mengambang */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Judul/logo */
+header h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #d200d2; /* pink ungu */
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Menu navbar */
+nav {
+  display: flex;
+  gap: 30px;
+}
+
+/* Link navbar */
+nav a {
+  text-decoration: none;
+  color: #3a003a;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.3s ease;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+/* Efek hover */
+nav a:hover,
+nav a.active {
+  background-color: #ff66ff;
+  color: black;
+}
+
+/* Style tambahan untuk form kontak */
+#contactForm {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease-in-out;
+}
+
+#contactForm:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+#contactForm .form-label {
+  font-weight: 600;
+  color: #343a40;
+}
+
+#contactForm input,
+#contactForm textarea {
+  border-radius: 10px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#contactForm input:focus,
+#contactForm textarea:focus {
+  border-color: #198754;
+  box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.25);
+}
+
+#contactForm button {
+  width: 100%;
+  padding: 12px;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 10px;
+}

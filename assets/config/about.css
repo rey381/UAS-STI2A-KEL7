@@ -1,0 +1,204 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+/* Background khusus untuk halaman ABOUT */
+.with-bg {
+  background-image: url('keluarga.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px;
+}
+
+.content {
+  background-color: rgba(185, 43, 143, 0.7);
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.title {
+  text-align: center;
+  color: #fdd835;
+}
+
+.center {
+  text-align: center;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #fdd835;
+  margin-bottom: 20px;
+}
+
+.info {
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.section {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 25px;
+}
+
+.section-title {
+  color: #fdd835;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.social {
+  margin-top: 30px;
+}
+
+.tombol {
+  background-color: transparent;
+  border: 2px solid #fdd835;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tombol a {
+  color: #ffe082;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.tombol:hover {
+  background-color: #fdd835;
+}
+
+.tombol:hover a {
+  color: black;
+}
+
+/* Tombol utama */
+.btn-primary {
+  display: inline-block;
+  background-color: #4a90e2;
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 30px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #357ab7;
+  transform: translateY(-2px);
+  box-shadow: 0 0 15px #4a90e2, 0 0 30px #4a90e2;
+}
+
+/* Container tombol anggota */
+.anggota-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+/* Responsive di layar kecil */
+@media (max-width: 600px) {
+  .btn-primary {
+    width: 80%;
+    font-size: 14px;
+  }
+
+  .anggota-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.footer {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+  border-top: 1px solid #444;
+  margin-top: 50px;
+}
+
+
+
+.footer-content {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+.footer {
+  border-top: 1px solid #444;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Style untuk header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff; /* warna putih */
+  padding: 20px 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* bayangan agar ada kesan mengambang */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Judul/logo */
+header h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #d200d2; /* pink ungu */
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Menu navbar */
+nav {
+  display: flex;
+  gap: 30px;
+}
+
+/* Link navbar */
+nav a {
+  text-decoration: none;
+  color: #3a003a;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.3s ease;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+/* Efek hover */
+nav a:hover,
+nav a.active {
+  background-color: #ff66ff;
+  color: white;
+}

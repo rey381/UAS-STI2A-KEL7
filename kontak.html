@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - REHANCHROME</title>
+  <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      rel="stylesheet"
+    />
+  <link rel="stylesheet" href="assets/config/style.css" />
+  <link rel="stylesheet" href="assets/config/contact.css" />
+</head>
+<body>
+<header role="banner" class="header">  
+ <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Pulau Medan</a>
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="profile.html">Profile</a></li>
+          <li class="nav-item"><a class="nav-link" href="berita.html">News</a></li>
+          <li class="nav-item"><a class="nav-link" href="video.html">video</a></li>
+          <li class="nav-item"><a class="nav-link" href="galerifoto.html">galeri</a></li>
+          <li class="nav-item"><a class="nav-link" href="aboutme.html">aboutme</a></li>
+          <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+  <section class="contact-container">
+    <!-- ======================= ANGGI REHAN ======================= -->
+    <div class="profile">
+      <img src="img/rey.jpg" alt="Anggi Rehan Pangestu" />
+      <h3>Anggi Rehan Pangestu</h3>
+      <p><a href="mailto:anggirhnpangstu@gmail.com">anggirhnpangstu@gmail.com</a></p>
+      <p><a href="tel:+62895323159683">62895-3231-59683</a></p>
+      <p>Kotabumi</p>
+      <p><a href="https://instagram.com/anggi_rehanpangestu" target="_blank">@anggi_rehanpangestu</a></p>
+    </div>
+
+    <!-- ======================= ANGGOTA 1 & 2 ======================= -->
+    <div class="members">
+      <div class="profile">
+        <img src="img/herlina.jpg" alt="Anggota 1" />
+        <h3>HERLINA</h3>
+        <p><a href="pherlina759@gmail.com">pherlina759@gmail.com</a></p>
+        <p><a href="tel:+62895610086976">62895610086976</a></p>
+        <p>kbn 4,jln.lada 4</p>
+        <p><a href="https://www.instagram.com/nahrlina_?igsh=a254cmw1MWE2dWox&utm_source=qr" target="_blank">nahrlina_</a></p>
+      </div>
+      <div class="profile">
+        <img src="img/meylin.jpg" alt="Anggota 2" />
+        <h3>Meylinah</h3>
+        <p><a href="meylinah233@gmail.com">meylinah233@gmail.com</a></p>
+        <p><a href="tel:+6289620887843">6289620887843</a></p>
+        <p>Sribasuki</p>
+        <p><a href="https://www.instagram.com/mlnnaaa._?igsh=MTJ0MjB6cWFuNXU4Zg==" target="_blank">mlnnaaa</a></p>
+      </div>
+    </div>
+  </section>
+  <section class="container my-5">
+  <h2 class="mb-4">Hubungi Salah Satu dari Kami</h2>
+  <p>tanpa tanda + jadi (62) saja</p>
+  <form id="contactForm">
+    <div class="mb-3">
+      <label for="from" class="form-label">Data Kamu (No HP atau Email):</label>
+      <input type="text" class="form-control" id="from" placeholder="Masukkan no HP atau email kamu">
+    </div>
+    <div class="mb-3">
+      <label for="to" class="form-label">Untuk Admin (No HP atau Email admin):</label>
+      <input type="text" class="form-control" id="to" placeholder="Masukkan no HP atau email admin">
+    </div>
+    <div class="mb-3">
+      <label for="message" class="form-label">Pesan:</label>
+      <textarea class="form-control" id="message" rows="4" placeholder="Tulis pesanmu di sini..."></textarea>
+    </div>
+    <button type="button" class="btn btn-success" onclick="kirimPesan()">Kirim</button>
+  </form>
+</section>
+  <footer class="footer">
+      <div class="container footer-content">
+        <p>&copy; 2025 anggi rehan pangestu.</p>
+      </div>
+    </footer>
+    <script>
+      // Efek transisi halaman
+      const links = document.querySelectorAll("a[href]");
+      links.forEach((link) => {
+        link.addEventListener("click", function (e) {
+          const url = this.href;
+          if (!url.includes("#") && !this.target) {
+            e.preventDefault();
+            document.body.classList.add("fade-out");
+            setTimeout(() => {
+              window.location.href = url;
+            }, 400);
+          }
+        });
+      });
+    </script>
+    <script>
+  function kirimPesan() {
+    const from = document.getElementById("from").value.trim();
+    const to = document.getElementById("to").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    if (!from || !to || !message) {
+      alert("Harap isi semua kolom.");
+      return;
+    }
+
+    if (/^\d+$/.test(to)) {
+      // Kirim via WhatsApp
+      const encodedMsg = encodeURIComponent(`Halo Admin, ini pesan dari ${from}:\n\n${message}`);
+      const waUrl = `https://wa.me/${to}?text=${encodedMsg}`;
+      window.open(waUrl, '_blank');
+    } else {
+      // Kirim via Email
+      const subject = encodeURIComponent("Pesan dari pengguna");
+      const body = encodeURIComponent(`Dari: ${from}\n\nPesan:\n${message}`);
+      const mailUrl = `mailto:${to}?subject=${subject}&body=${body}`;
+      window.location.href = mailUrl;
+    }
+  }
+</script>
+
+</body>
+</html>

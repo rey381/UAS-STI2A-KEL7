@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff0f5;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem 0;
+}
+
+.header {
+  background-color: #ff66a3;
+  color: white;
+  text-align: center;
+  padding: 3rem 1rem 2rem 1rem;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin-bottom: 2rem; 
+}
+
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.header p {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+section {
+  background: white;
+  margin-top: 2rem;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+.intro h2,
+.advantages h2 {
+  color: #d6006b;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.advantages ul {
+  padding-left: 1.2rem;
+}
+
+.advantages li {
+  margin-bottom: 0.8rem;
+  line-height: 1.5;
+}
+
+.map iframe {
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.footer {
+  background-color: #ff66a3;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  margin-top: 3rem;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+/* Style untuk header */
+/* Navbar sticky dan rapi */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo Judul */
+header h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #d200d2;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar menu */
+nav {
+  display: flex;
+  gap: 30px;
+}
+
+/* Link di navbar */
+nav a {
+  text-decoration: none;
+  color: #3a003a;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.3s ease;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+/* Hover & Active */
+nav a:hover,
+nav a.active {
+  background-color: #ff66ff;
+  color: white;
+}
